@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:OverlayEnabler"
         xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
-        Title="Overlay Enabler" WindowStyle="None" AllowsTransparency="True" Background="Transparent" IsHitTestVisible="False" Topmost="True" ShowInTaskbar="False" Loaded="FormLoaded" WindowStartupLocation="CenterScreen"
-        >
+        Title="" WindowStyle="None" AllowsTransparency="True" Background="Transparent" IsHitTestVisible="False" Topmost="True" ShowInTaskbar="False" Loaded="FormLoaded" WindowStartupLocation="CenterScreen"
+        PreviewLostKeyboardFocus="Window_PreviewLostKeyboardFocus">
     <Grid>
         <wpf:ChromiumWebBrowser x:Name="Browser"/>
     </Grid>
