@@ -12,6 +12,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Media.Animation;
+using CefSharp;
 
 namespace OverlayEnabler
 {
@@ -23,9 +24,11 @@ namespace OverlayEnabler
         private const int WM_HOTKEY = 0x0312;
         private const int MOD_CONTROL = 0x0002;
         private const int VK_E = 0x45;
+        private const int VK_R = 0x52;
         private const int VK_INSERT = 0x2D;
         private const int HOTKEY_ID_EXIT = 9000;
         private const int HOTKEY_ID_SHOWHIDE = 9001;
+        private const int HOTKEY_ID_RELOAD = 9002;
         [DllImport("user32.dll", SetLastError = true)]
         static extern int GetWindowLong(IntPtr hWnd, int nIndex);
         [DllImport("user32.dll")]
@@ -67,7 +70,7 @@ namespace OverlayEnabler
             // Register the hotkey
             RegisterHotKey(helper, HOTKEY_ID_EXIT, MOD_CONTROL, VK_E); // Exit hotkey: Ctrl + E
             RegisterHotKey(helper, HOTKEY_ID_SHOWHIDE, 0, VK_INSERT); // Show/hide hotkey: Insert
-
+            RegisterHotKey(helper, HOTKEY_ID_RELOAD, MOD_CONTROL, VK_R); // Reload hotkey: Ctrl + R
 
             // Add the hook to handle the hotkey
             HwndSource source = HwndSource.FromHwnd(helper);
@@ -86,6 +89,11 @@ namespace OverlayEnabler
                 else if (hotkeyId == HOTKEY_ID_SHOWHIDE)
                 {
                     ToggleWindowVisibility();
+                    handled = true;
+                }
+                else if (hotkeyId == HOTKEY_ID_RELOAD)
+                {
+                    Browser.Reload();
                     handled = true;
                 }
             }
