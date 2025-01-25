@@ -596,6 +596,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -615,11 +623,19 @@
         "InstallerBootstrapper" = "3:2"
             "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
             {
-            "Enabled" = "11:TRUE"
+            "Enabled" = "11:FALSE"
             "PromptEnabled" = "11:TRUE"
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -2341,15 +2357,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Overlay Enabler"
-        "ProductCode" = "8:{E00323D3-4847-419C-B671-D47587E1BA85}"
-        "PackageCode" = "8:{97EAEA72-AACC-4E42-AC26-74A8E5C02AF7}"
+        "ProductCode" = "8:{E1DD37D9-A6A4-4B57-96DA-93EABEEE3571}"
+        "PackageCode" = "8:{FDB08F95-70D5-4E9D-A99A-4B76F9B8EE52}"
         "UpgradeCode" = "8:{C301110F-D5DD-461F-B855-827E05901E91}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.1"
+        "ProductVersion" = "8:1.0.2"
         "Manufacturer" = "8:Nguyen Minh Thai"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
