@@ -226,13 +226,13 @@
         "Entry"
         {
         "MsmKey" = "8:_62465A2F38E16DF2DCD8771428806C1D"
-        "OwnerKey" = "8:_7237E6FDE8BF641E4D5A2E6549ABC402"
+        "OwnerKey" = "8:_0A38A0512F8D4CA9AD04AD76F65E264F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_62465A2F38E16DF2DCD8771428806C1D"
-        "OwnerKey" = "8:_0A38A0512F8D4CA9AD04AD76F65E264F"
+        "OwnerKey" = "8:_7237E6FDE8BF641E4D5A2E6549ABC402"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -334,6 +334,12 @@
         "Entry"
         {
         "MsmKey" = "8:_83F285A83FAB426BA62CF060B8583E71"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_86B5895DF3974DAC9F18F422EDFEC9E4"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -520,7 +526,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1EF694AD7F48CDEF847B9ACA74D0EDCB"
+        "OwnerKey" = "8:_55915501F79546D198711FC6245D4EDF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -533,12 +539,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7237E6FDE8BF641E4D5A2E6549ABC402"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_55915501F79546D198711FC6245D4EDF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -565,6 +565,12 @@
         "OwnerKey" = "8:_62465A2F38E16DF2DCD8771428806C1D"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1EF694AD7F48CDEF847B9ACA74D0EDCB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -583,6 +589,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -599,6 +613,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1614,6 +1636,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_86B5895DF3974DAC9F18F422EDFEC9E4"
+            {
+            "SourcePath" = "8:..\\start.bat"
+            "TargetName" = "8:start.bat"
+            "Tag" = "8:"
+            "Folder" = "8:_98212099B9874F6FB0EE5E577AC04C84"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_872F3374C6424CDE9400F73E001E49E7"
             {
             "SourcePath" = "8:..\\packages\\chromiumembeddedframework.runtime.win-x64.131.3.5\\CEF\\win-x64\\locales\\en-GB.pak"
@@ -2420,6 +2462,48 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_0773AFF2F9B64439B5C05F77394BB207"
+            {
+            "Name" = "8:Start Overlay Enabler"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_86B5895DF3974DAC9F18F422EDFEC9E4"
+            "Folder" = "8:_98212099B9874F6FB0EE5E577AC04C84"
+            "WorkingFolder" = "8:_98212099B9874F6FB0EE5E577AC04C84"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_646122FE18514F81AE5BD7495FF6D3CC"
+            {
+            "Name" = "8:Start Overlay Enabler"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_86B5895DF3974DAC9F18F422EDFEC9E4"
+            "Folder" = "8:_FE187F352D4446E095E26C81DFC81310"
+            "WorkingFolder" = "8:_98212099B9874F6FB0EE5E577AC04C84"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E356FEBC4AEF4B39B6006AC8551FAF2C"
+            {
+            "Name" = "8:Start Overlay Enabler"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_86B5895DF3974DAC9F18F422EDFEC9E4"
+            "Folder" = "8:_772FCC4AA3424A8A9F75A20A27541CCD"
+            "WorkingFolder" = "8:_98212099B9874F6FB0EE5E577AC04C84"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
