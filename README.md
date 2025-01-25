@@ -4,8 +4,9 @@ Show your observer overlay right on the observer screen
 This program only run on Windows 10 64bit and later
 
 Required Dependency:
+* .NET Framework 4.7.2 and later: [Download here](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net472-offline-installer)
 
-Microsoft Visual C++ Redistributable (2015-2022): [Download here](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+* Microsoft Visual C++ Redistributable (2015-2022): [Download here](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 Go to [Release](https://github.com/b4iterdev/OverlayEnabler/releases/) and download the latest installer.
 ## How to start:
