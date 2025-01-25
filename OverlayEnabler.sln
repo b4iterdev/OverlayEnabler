@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverlayEnabler", "OverlayEnabler\OverlayEnabler.csproj", "{189FB7A0-8B5C-44D6-9D45-1DDA0B81DB96}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Overlay Enabler Installer", "Overlay Enabler Installer\Overlay Enabler Installer.vdproj", "{D7EF17AE-9820-4736-A1A2-2E4D4D29B55E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{189FB7A0-8B5C-44D6-9D45-1DDA0B81DB96}.Release|Any CPU.Build.0 = Release|Any CPU
 		{189FB7A0-8B5C-44D6-9D45-1DDA0B81DB96}.Release|x64.ActiveCfg = Release|x64
 		{189FB7A0-8B5C-44D6-9D45-1DDA0B81DB96}.Release|x64.Build.0 = Release|x64
+		{D7EF17AE-9820-4736-A1A2-2E4D4D29B55E}.Debug|Any CPU.ActiveCfg = Debug
+		{D7EF17AE-9820-4736-A1A2-2E4D4D29B55E}.Debug|x64.ActiveCfg = Debug
+		{D7EF17AE-9820-4736-A1A2-2E4D4D29B55E}.Release|Any CPU.ActiveCfg = Release
+		{D7EF17AE-9820-4736-A1A2-2E4D4D29B55E}.Release|x64.ActiveCfg = Debug
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,11 +8,11 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("OverlayEnabler")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Show your observer overlay right on the observer screen")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Atlas Playbook v0.4.1")]
+[assembly: AssemblyCompany("Nguyen Minh Thai")]
 [assembly: AssemblyProduct("OverlayEnabler")]
-[assembly: AssemblyCopyright("Copyright © Atlas Playbook v0.4.1 2025")]
+[assembly: AssemblyCopyright("Copyright © Nguyen Minh Thai 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -50,3 +50,4 @@ using System.Windows;
 //
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguage("en")]
