@@ -9,7 +9,7 @@ REM Prompt the user for a URL
 set /p url="Please enter the URL: "
 
 REM Execute OverlayEnabler.exe with the provided URL
-OverlayEnabler.exe %url%
+START OverlayEnabler.exe %url%
 
 endlocal
-pause
+timeout /t 5
