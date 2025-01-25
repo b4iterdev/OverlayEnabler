@@ -11,6 +11,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Interop;
+using System.Windows.Media.Animation;
 
 namespace OverlayEnabler
 {
@@ -64,8 +65,8 @@ namespace OverlayEnabler
                 Application.Current.Shutdown();
             }
             // Register the hotkey
-            RegisterHotKey(helper, HOTKEY_ID_EXIT, MOD_CONTROL, VK_E);
-            RegisterHotKey(helper, HOTKEY_ID_SHOWHIDE, 0, VK_INSERT);
+            RegisterHotKey(helper, HOTKEY_ID_EXIT, MOD_CONTROL, VK_E); // Exit hotkey: Ctrl + E
+            RegisterHotKey(helper, HOTKEY_ID_SHOWHIDE, 0, VK_INSERT); // Show/hide hotkey: Insert
 
 
             // Add the hook to handle the hotkey
@@ -92,13 +93,24 @@ namespace OverlayEnabler
         }
         private void ToggleWindowVisibility()
         {
+            DoubleAnimation fadeAnimation = new DoubleAnimation
+            {
+                Duration = new Duration(TimeSpan.FromSeconds(0.3))
+            };
+
             if (this.Visibility == Visibility.Visible)
             {
-                this.Hide();
+                fadeAnimation.From = 1.0;
+                fadeAnimation.To = 0.0;
+                fadeAnimation.Completed += (s, e) => this.Hide();
+                this.BeginAnimation(Window.OpacityProperty, fadeAnimation);
             }
             else
             {
                 this.Show();
+                fadeAnimation.From = 0.0;
+                fadeAnimation.To = 1.0;
+                this.BeginAnimation(Window.OpacityProperty, fadeAnimation);
             }
         }
         protected override void OnClosed(EventArgs e)
