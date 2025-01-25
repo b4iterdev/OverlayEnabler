@@ -26,7 +26,7 @@ Global
 		{D7EF17AE-9820-4736-A1A2-2E4D4D29B55E}.Debug|Any CPU.ActiveCfg = Debug
 		{D7EF17AE-9820-4736-A1A2-2E4D4D29B55E}.Debug|x64.ActiveCfg = Debug
 		{D7EF17AE-9820-4736-A1A2-2E4D4D29B55E}.Release|Any CPU.ActiveCfg = Release
-		{D7EF17AE-9820-4736-A1A2-2E4D4D29B55E}.Release|x64.ActiveCfg = Debug
+		{D7EF17AE-9820-4736-A1A2-2E4D4D29B55E}.Release|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
