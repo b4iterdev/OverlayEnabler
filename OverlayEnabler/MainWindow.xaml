@@ -10,5 +10,6 @@
         PreviewLostKeyboardFocus="Window_PreviewLostKeyboardFocus">
     <Grid>
         <wpf:ChromiumWebBrowser x:Name="Browser"/>
+        <wpf:ChromiumWebBrowser x:Name="SubBrowser"/>
     </Grid>
 </Window>
