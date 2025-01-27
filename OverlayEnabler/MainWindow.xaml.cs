@@ -159,7 +159,7 @@ namespace OverlayEnabler
         private void ShowHelp()
         {
             string helpText = "OverlayEnabler Help:\n\n" +
-                              "Usage: OverlayEnabler.exe [URL] [subURL] [options]\n\n" +
+                              "Usage: OverlayEnabler.exe [URL] [subURL up to 5] [options]\n\n" +
                               "Options:\n" +
                               "/help\t\tShow this help message\n\n" +
                               "Hotkeys:\n" +
