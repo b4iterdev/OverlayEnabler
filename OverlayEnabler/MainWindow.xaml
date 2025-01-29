@@ -8,8 +8,25 @@
         mc:Ignorable="d"
         Title="" WindowStyle="None" AllowsTransparency="True" Background="Transparent" IsHitTestVisible="False" Topmost="True" ShowInTaskbar="False" Loaded="FormLoaded" WindowStartupLocation="CenterScreen"
         PreviewLostKeyboardFocus="Window_PreviewLostKeyboardFocus">
+        <Window.Resources>
+        <Style TargetType="FrameworkElement" x:Key="animated">
+            <Setter Property="Visibility" Value="Hidden"/>
+                <Style.Triggers>
+                    <Trigger Property="Visibility" Value="Visible">
+                <Trigger.EnterActions>
+        <BeginStoryboard>
+          <Storyboard>
+            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                             From="0.0" To="1.0" Duration="0:0:0.3"/>
+          </Storyboard>
+        </BeginStoryboard>
+      </Trigger.EnterActions>
+    </Trigger>
+  </Style.Triggers>
+</Style>
+    </Window.Resources>
     <Grid>
         <wpf:ChromiumWebBrowser x:Name="Browser"/>
-        <wpf:ChromiumWebBrowser x:Name="SubBrowser"/>
+        <wpf:ChromiumWebBrowser x:Name="SubBrowser" Style="{StaticResource animated}"/>
     </Grid>
 </Window>

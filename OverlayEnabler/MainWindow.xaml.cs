@@ -123,8 +123,7 @@ namespace OverlayEnabler
                 }
                 else if (hotkeyId >= HOTKEY_ID_BASE_SUBURL && hotkeyId < HOTKEY_ID_BASE_SUBURL + subURLs.Length)
                 {
-                    SubBrowser.Opacity = 1.0;
-                    MessageBox.Show(SubBrowser.Opacity.ToString(), "Help", MessageBoxButton.OK, MessageBoxImage.Information);
+                    SubBrowser.Visibility = true;
                     int index = hotkeyId - HOTKEY_ID_BASE_SUBURL;
                     SubBrowser.Address = subURLs[index];
                     handled = true;
@@ -141,19 +140,7 @@ namespace OverlayEnabler
         {
             if (SubBrowser != null)
             {
-                DoubleAnimation fadeAnimation = new DoubleAnimation
-                {
-                    From = 1.0,
-                    To = 0.5,
-                    Duration = new Duration(TimeSpan.FromSeconds(0.3))
-                };
-                fadeAnimation.Completed += (s, e) =>
-                {
-                    SubBrowser.Address = "about:blank";
-                    SubBrowser.Opacity = 1.0;
-                    MessageBox.Show(SubBrowser.Opacity.ToString(), "Help", MessageBoxButton.OK, MessageBoxImage.Information);
-                };
-                SubBrowser.BeginAnimation(UIElement.OpacityProperty, fadeAnimation);
+                SubBrowser.Visibility = false;
             }
         }
         private void ShowHelp()
