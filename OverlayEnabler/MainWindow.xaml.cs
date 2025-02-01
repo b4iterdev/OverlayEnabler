@@ -123,7 +123,9 @@ namespace OverlayEnabler
                 }
                 else if (hotkeyId >= HOTKEY_ID_BASE_SUBURL && hotkeyId < HOTKEY_ID_BASE_SUBURL + subURLs.Length)
                 {
-                    SubBrowser.Visibility = true;
+                    Storyboard fadeIn = (Storyboard)FindResource("FadeInMenu");
+                    SubBrowser.Visibility = Visibility.Visible;
+                    fadeIn.Begin(SubBrowser);
                     int index = hotkeyId - HOTKEY_ID_BASE_SUBURL;
                     SubBrowser.Address = subURLs[index];
                     handled = true;
@@ -140,9 +142,13 @@ namespace OverlayEnabler
         {
             if (SubBrowser != null)
             {
-                SubBrowser.Visibility = false;
+                Storyboard fadeOut = (Storyboard)FindResource("FadeOutMenu");
+                fadeOut.Begin(SubBrowser);
+                SubBrowser.Visibility = Visibility.Hidden;
+                SubBrowser.Address = "about:blank";
             }
         }
+
         private void ShowHelp()
         {
             string helpText = "OverlayEnabler Help:\n\n" +
