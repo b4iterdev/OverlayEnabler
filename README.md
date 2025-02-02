@@ -12,7 +12,7 @@ Go to [Release](https://github.com/b4iterdev/OverlayEnabler/releases/) and downl
 ## How to start:
 You can start by executing the following command in the application directory: 
 ```
-.\OverlayEnabler.exe <url> //eg: https://spectra-official.b4iterdev.net.eu.org/overlay
+.\OverlayEnabler.exe <url> //eg: https://spectra-overlay.b4iterdev.net.eu.org/overlay
 ```
 Or you can run `start.bat` in the application directory or Start Overlay Enabler shortcut located in your Start Menu Folder and Desktop
 ## How to use:
