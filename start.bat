@@ -33,7 +33,7 @@ if errorlevel 2 (
     echo Press Ctrl + F2 for technical pause, Ctrl + F3 for Left team timeout, Ctrl + F4 for Right team timeout.
     echo Press Ctrl + F1 to hide all timeout/pause.
     ECHO ======================================================================================================== 
-    START OverlayEnabler.exe "!url!/overlay?groupCode=!groupCode!" "!url!/timeout?groupCode=!groupCode!&team=tech" "!url!/timeout?groupCode=!groupCode!&team=1" "!url!/timeout?groupCode=!groupCode!&team=2"
+    START OverlayEnabler.exe "!url!/overlay?groupCode=!groupCode!" "!url!/timeout?groupCode=!groupCode!&team=tech" "!url!/timeout?groupCode=!groupCode!&team=0" "!url!/timeout?groupCode=!groupCode!&team=1"
     timeout /t 5
     exit /b 0
 )
