@@ -49,7 +49,19 @@ namespace OverlayEnabler
 
         public MainWindow()
         {
+            if (IsAlreadyRunning())
+            {
+                MessageBox.Show("An instance of the application is already running.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                Application.Current.Shutdown();
+                return;
+            }
             InitializeComponent();
+        }
+        private bool IsAlreadyRunning()
+        {
+            Process currentProcess = Process.GetCurrentProcess();
+            Process[] processes = Process.GetProcessesByName(currentProcess.ProcessName);
+            return processes.Any(p => p.Id != currentProcess.Id);
         }
         //Form loaded event handler
         void FormLoaded(object sender, RoutedEventArgs args)

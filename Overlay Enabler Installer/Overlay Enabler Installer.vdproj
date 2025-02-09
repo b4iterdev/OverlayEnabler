@@ -2364,7 +2364,7 @@
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:TRUE"
+        "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:Nguyen Minh Thai"
         "ARPHELPTELEPHONE" = "8:"
